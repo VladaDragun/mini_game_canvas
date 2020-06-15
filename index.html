@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Game Canvas</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fb26edba7b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div id="mainWrapper">
+    <div id="wrapper">
+      <div id="overlayInfo" class="visible">ЧТОБЫ НАЧАТЬ ИГРУ НАЖМИТЕ ПРОБЕЛ</div>
+      <div id="winner" class="invisible">
+        <h1>ВЫ ВЫИГРАЛИ!</h1>
+        <div class="visible" id="enterWinnerName">
+          <p class="font20px">Введите имя, чтобы попасть в рейтинг:</p>
+          <input type="text" id="winnerName">
+          <button id="okButton" onclick="sendMessage()">ОК</button>
+        </div>
+        <div class="invisible" id="listOfWinners">
+          <h3>Наши победители:</h3>
+          <table id="allWinners"></table>
+        </div>
+        <p class="font20px">ИЛИ <br> Начните новую игру:</p>
+        <button id="reloadButton">ПОЕХАЛИ!</button>
+      </div>
+      <canvas id="myCanvas" width="0" height="0"></canvas>
+      <!-- <div>
+        <div class="arrows">
+          <button onclick="left()"><i class="fas fa-arrow-left"></i></button>
+          <button onclick="right()"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div> -->
+
+    </div>
+    <div id="newAttempt" class="invisible">
+      <h2>ВЫ ПРОИГРАЛИ(</h2>
+      <button id="tryAgain">ПОПРОБОВАТЬ СНОВА</button>
+    </div>
+    <div id="menu">
+      <ul>
+        <li><p id="score"></p></p></li>
+        <li><p id="livesCounter"></p></li>
+      </ul>
+      <div id="buttons">
+        <button id="volume"><i class="fas fa-volume-up"></i></button>
+        <button id="pause"><i class="fas fa-play"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
