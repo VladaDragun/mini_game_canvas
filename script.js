@@ -44,8 +44,8 @@ for(var c=0; c<brickColumnCount; c++) {
 }
 
 var score = 0;
-var lives = 3;
-var allLives = 3;
+var lives = 5;
+var allLives = 5;
 
 var scoreTime = document.getElementById('scoreTime');
 var scoreCount = document.getElementById('score');
