@@ -199,7 +199,7 @@ function collisionDetection() {
           dy = -dy;
           b.status = 0;
           score++;
-          if(score === bricksCounter) {
+          if(score === 5) {
             youWin();
           }
         }
